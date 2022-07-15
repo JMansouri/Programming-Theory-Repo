@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PartyDoor : MonoBehaviour
+public class PartyDoor : Door
 {
-    // Start is called before the first frame update
-    void Start()
+    public ParticleSystem confettiSystem;
+
+    public override void Open()
     {
-        
+        base.Open();
+        doorAnimator.SetTrigger("DoorOpen");
+        StartCoroutine("PartyDoorCoroutine");
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator PartyDoorCoroutine()
     {
-        
+        yield return new WaitForSeconds(1f);
+        confettiSystem.Play();
     }
 }

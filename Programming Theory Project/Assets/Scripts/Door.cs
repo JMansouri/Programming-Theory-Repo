@@ -26,6 +26,6 @@ public class Door : MonoBehaviour
 
     public virtual void Open()
     {
-        Debug.Log("Opening this door");
+        Debug.Log("Opening this door ...");
     }
 }
