@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 155243722}
   - component: {fileID: 155243721}
   m_Layer: 0
-  m_Name: Plane (15)
+  m_Name: RightWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,8 +150,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155243719}
   m_LocalRotation: {x: 0.00000013240823, y: 0.7071068, z: 0.7071068, w: -0.00000013240823}
-  m_LocalPosition: {x: 0.22499943, y: 0.859, z: -7.75}
-  m_LocalScale: {x: 2.2217326, y: 1.6053001, z: 1.6147054}
+  m_LocalPosition: {x: 0.225, y: 0.859, z: -7.75}
+  m_LocalScale: {x: 4.751175, y: 1.6053001, z: 1.6147054}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 932908393}
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 625449099}
   - component: {fileID: 625449098}
   m_Layer: 0
-  m_Name: Plane (10)
+  m_Name: SmallWall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,7 +563,7 @@ Transform:
   m_GameObject: {fileID: 722169534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.28, y: -1.0580001, z: 0.292}
-  m_LocalScale: {x: 1.6053, y: 0.12833965, z: 1.6053}
+  m_LocalScale: {x: 5.6852713, y: 0.12833965, z: 1.6053}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 932908393}
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 880614898}
   - component: {fileID: 880614897}
   m_Layer: 0
-  m_Name: Plane (13)
+  m_Name: SmallWall4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -715,7 +715,7 @@ GameObject:
   - component: {fileID: 884701038}
   - component: {fileID: 884701037}
   m_Layer: 0
-  m_Name: Plane (12)
+  m_Name: SmallWall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -900,7 +900,7 @@ GameObject:
   - component: {fileID: 917088748}
   - component: {fileID: 917088747}
   m_Layer: 0
-  m_Name: Plane (14)
+  m_Name: LeftWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -915,7 +915,7 @@ Transform:
   m_GameObject: {fileID: 917088745}
   m_LocalRotation: {x: 0.7071068, y: -0.00000013240823, z: -0.00000013240823, w: -0.7071068}
   m_LocalPosition: {x: -5.09, y: 0.859, z: 8.17}
-  m_LocalScale: {x: 2.2217326, y: 1.6053001, z: 1.6147054}
+  m_LocalScale: {x: 6.5101213, y: 1.6053001, z: 1.6147054}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 932908393}
@@ -1025,6 +1025,7 @@ Transform:
   - {fileID: 880614896}
   - {fileID: 917088746}
   - {fileID: 155243720}
+  - {fileID: 1613437237}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1135,7 +1136,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5912,7 +5913,7 @@ GameObject:
   - component: {fileID: 977307112}
   - component: {fileID: 977307111}
   m_Layer: 0
-  m_Name: Plane (9)
+  m_Name: BehindWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6221,7 +6222,7 @@ GameObject:
   - component: {fileID: 1286314499}
   - component: {fileID: 1286314498}
   m_Layer: 0
-  m_Name: Plane (2)
+  m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6299,8 +6300,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286314497}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.22499943, y: 4.93, z: 0.292}
-  m_LocalScale: {x: 1.2387333, y: 1.6053, z: 1.6053}
+  m_LocalPosition: {x: 0.225, y: 4.93, z: 0.292}
+  m_LocalScale: {x: 4.6447544, y: 1.6053, z: 1.6053}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 932908393}
@@ -6366,6 +6367,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 270537993661885438, guid: 0f9fd0cbd20ff2045b077c5bed40e97f, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 270537993661885438, guid: 0f9fd0cbd20ff2045b077c5bed40e97f, type: 3}
       propertyPath: rayLenght
       value: 1.5
       objectReference: {fileID: 0}
@@ -6383,7 +6388,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 270537994876089971, guid: 0f9fd0cbd20ff2045b077c5bed40e97f, type: 3}
       propertyPath: m_ClearFlags
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 270537994876089971, guid: 0f9fd0cbd20ff2045b077c5bed40e97f, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 270537994876089971, guid: 0f9fd0cbd20ff2045b077c5bed40e97f, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 270537994876089971, guid: 0f9fd0cbd20ff2045b077c5bed40e97f, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 270537994876089972, guid: 0f9fd0cbd20ff2045b077c5bed40e97f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6404,7 +6421,7 @@ GameObject:
   - component: {fileID: 1476545025}
   - component: {fileID: 1476545024}
   m_Layer: 0
-  m_Name: Plane (5)
+  m_Name: Ceiling Light1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6489,6 +6506,104 @@ Transform:
   m_Father: {fileID: 932908393}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!1 &1613437236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613437237}
+  - component: {fileID: 1613437240}
+  - component: {fileID: 1613437239}
+  - component: {fileID: 1613437238}
+  m_Layer: 0
+  m_Name: BehindDoorsWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1613437237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613437236}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 18.78, y: 0.859, z: 2.2}
+  m_LocalScale: {x: 2.2217326, y: 1.6053001, z: 1.6147054}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 932908393}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
+--- !u!64 &1613437238
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613437236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1613437239
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613437236}
+  m_Enabled: 1
+  m_CastShadows: 2
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 595cdeea06e831848902476806feaede, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1613437240
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613437236}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1761602046
 GameObject:
   m_ObjectHideFlags: 0
@@ -6502,7 +6617,7 @@ GameObject:
   - component: {fileID: 1761602049}
   - component: {fileID: 1761602048}
   m_Layer: 0
-  m_Name: Plane (8)
+  m_Name: ForwardWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6761,7 +6876,7 @@ GameObject:
   - component: {fileID: 1918678638}
   - component: {fileID: 1918678637}
   m_Layer: 0
-  m_Name: Plane (7)
+  m_Name: Ceiling Light2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6859,7 +6974,7 @@ GameObject:
   - component: {fileID: 2106642811}
   - component: {fileID: 2106642810}
   m_Layer: 0
-  m_Name: Plane (11)
+  m_Name: SmallWall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
