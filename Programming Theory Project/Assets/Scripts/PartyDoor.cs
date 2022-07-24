@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PartyDoor : Door // INHERITANCE
+public class PartyDoor : Door // INHERITANCE  - child of Door class
 {
     public ParticleSystem confettiSystem;
 

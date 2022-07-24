@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Door : MonoBehaviour
+public class Door : MonoBehaviour // Parent Class
 {
     // ENCAPSULATION :
 

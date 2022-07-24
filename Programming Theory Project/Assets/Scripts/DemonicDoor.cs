@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DemonicDoor : Door // INHERITANCE
+public class DemonicDoor : Door // INHERITANCE  - child of Door class
 {
     // POLYMORPHISM:
     public override void Open()
