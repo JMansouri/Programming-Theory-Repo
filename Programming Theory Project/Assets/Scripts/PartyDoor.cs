@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PartyDoor : Door
+public class PartyDoor : Door // INHERITANCE
 {
     public ParticleSystem confettiSystem;
 
+    // POLYMORPHISM:
     public override void Open()
     {
         base.Open();

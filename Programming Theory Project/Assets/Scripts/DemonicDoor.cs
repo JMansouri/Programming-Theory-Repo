@@ -2,17 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DemonicDoor : MonoBehaviour
+public class DemonicDoor : Door // INHERITANCE
 {
-    // Start is called before the first frame update
-    void Start()
+    // POLYMORPHISM:
+    public override void Open()
     {
+        base.Open();
+
+        // ABSTRACTION:
+        OpenDemonicDoor();
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OpenDemonicDoor()
     {
-        
+        Debug.Log("-> Initializing the opening process:");
+        doorAnimator.SetTrigger("DoorOpen");
+        StartCoroutine("DemonicDoorCoroutine");
     }
+
+    IEnumerator DemonicDoorCoroutine()
+    {
+        yield return new WaitForSeconds(1f);
+        while (!(RenderSettings.ambientSkyColor == Color.black))
+        {
+            Color color = RenderSettings.ambientSkyColor;
+            Color newColor = new Color(color.r-0.1f, color.g-0.1f, color.b-0.1f);
+            RenderSettings.ambientSkyColor = newColor;            
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
 }

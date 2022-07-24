@@ -35,14 +35,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void OpenNearbyDoor()
     {
-        Debug.Log("E pressed");
-
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
         
         RaycastHit hit;
         if (Physics.Raycast(transform.position,fwd, out hit, rayLenght,layer))
-        {
-            Debug.Log("hit something");
+        {            
             Door nearbyDoor = hit.collider.gameObject.GetComponentInParent<Door>();
             if (nearbyDoor != null)
             {
